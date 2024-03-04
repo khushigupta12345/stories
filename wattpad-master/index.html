@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wattpad : Home</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico" />
+	<!-- Font Awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Bootstrap -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Slick slider -->
+	<link href="assets/css/slick.css" rel="stylesheet">
+	<!-- Theme color -->
+	<link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+	<!-- Main Style -->
+	<link href="style.css" rel="stylesheet">
+	<!-- Open Sans for body font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+	<!-- Lato for Title -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<!-- aos -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+	<style>
+						.premium {
+							background-color: #a33724;
+							border-radius: 15px;
+						}
+
+						#mu-hero {
+							margin-bottom: 18px !important;
+
+						}
+
+						.mu-hero-left h3 {
+							color: #f9f4f4;
+						}
+
+						.mu-heading-title {
+							margin-bottom: 0px !important;
+							margin-top: 40px !important;
+						}
+
+						.dropbtn {
+
+							color: #f6f2f2;
+							padding: 16px;
+							font-size: 16px;
+							border: none;
+						}
+						.dropbtn b{
+							padding: 20px;
+						}
+
+						.dropdown {
+							position: relative;
+							display: inline-block;
+						}
+
+						.dropdown-content {
+							display: none;
+							position: absolute;
+							background-color: #f9f6f6;
+						/*	min-width: 160px;*/
+							box-shadow: 0px 8px 16px 0px rgba(56, 55, 55, 0.2);
+							z-index: 1;
+							margin-top: 50px;
+							margin-right: 50px;
+							cursor: pointer;
+						}
+
+						.dropdown-content a {
+							color: rgb(24, 23, 23);
+							padding: 12px 16px;
+							text-decoration: none;
+							display: block;
+						}
+
+						.dropdown-content a:hover {
+							background-color: #337ab7;
+						}
+
+						.dropdown:hover .dropdown-content {
+							display: block;
+						}
+
+						.dropdown:hover .dropbtn {
+							background-color: #f2ac42;
+						}
+
+						/* login form */
+
+						* {
+							margin: 0;
+							padding: 0;
+							font-family: 'Times New Roman', Times, serif;
+							box-sizing:' border-box';
+						}
+
+						.btn-login {
+							background-color: rgb(59, 59, 59);
+							font-size: 20px;
+							color: azure;
+							padding: 1px 10px;
+							cursor: pointer;
+							background-color: #a33724;
+							border-radius: 15px;
+							margin-left: 10px;
+						}
+
+
+						.fullbg {
+							width: 100%;
+							height: 100vh;
+							position: fixed;
+							top: 0;
+							background: hwb(204 60% 5%);
+							z-index: -1;
+							opacity: 0;
+							transition: 1s;
+						}
+
+						/* click this open the fullbg color to js by */
+						.showfullbg {
+							opacity: 1;
+							z-index: 1;
+						}
+
+						.loginform {
+							width: 350px;
+							background-color: rgb(176, 180, 180);
+							padding: 30px 20px;
+							position: absolute;
+							left: 50%;
+							top: -50%;
+							transform: translate(-50%, -50%);
+							box-shadow: 0px 0px 10px 3px rgb(27, 23, 23);
+							transition: 2s;
+							opacity: 1;
+							margin-right: 30%;
+						}
+
+						/* click this open the show the login form to js by */
+
+						.showloginform {
+							top: 50%;
+							opacity: 1;
+						}
+
+						.loginform input {
+							width: 100%;
+							height: 35px;
+							margin-bottom: 20px;
+						}
+
+						.loginform button {
+							background-color: black;
+							color: aliceblue;
+							padding: 10px 15px;
+						}
+
+						.loginform span {
+							position: absolute;
+							right: 0px;
+							width: 30px;
+							color: aliceblue;
+							line-height: 30px;
+							height: 30px;
+							background-color: blue;
+							text-align: center;
+							top: 0px;
+							cursor: pointer;
+						}
+						.dropdown-content a{color: #000!important;width:200px!important; float: left}
+					
+
+						.aw{min-width:600px!important;
+						}
+											
+					</style>
+</head>
+
+<body>
+	<!-- Start Header -->
+	<header id="mu-header" class="" role="banner">
+		<div class="container">
+			<nav class="navbar navbar-default mu-navbar">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+							data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+                           <a class="navbar-brand" href="index.html"><i class="fa fa-book" aria-hidden="true"></i>
+							Wattpad</a>
+						<ul class="nav navbar-nav mu-menu navbar-right">
+							<div class="dropdown" style="display:flex; text-align:center; space-content:between">
+							<a class="dropbtn"><b>Browse</b>
+									<i class="fa fa-caret-down"></i>
+							</a>
+								<div class="dropdown-content aw">
+									<h3>Browse</h3>
+									<a href="#">Wattpad Originals</a>
+									<a href="#">Adventure</a>
+									<a href="#">Fanfiction</a>
+									<a href="#">Horror</a>
+									<a href="#">Mystery</a>
+									<a href="#">Paranormal</a>
+									<a href="#">Science Fiction</a>
+									<a href="#">Thriller</a>
+								</div>
+						<!-- 	</div> -->
+						       <!--  <div class="dropdown" style="display:flex; text-align:center; space-content:between">
+								<a class="dropbtn"><b>Community</b>
+									<i class="fa fa-caret-down"></i>
+								</a>
+								<div class="dropdown-content">
+									<h3>Community</h3>
+									<a href="#">The Watty Awards</a>
+									<a href="#">Community Happenings</a>
+									<a href="#">Wattpad Ambassadors</a>
+								</div>
+							</div> -->
+						</div>
+						</ul>
+					</div> <!-- close nav header -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav mu-menu navbar-right"> 
+							<li>
+								<div class="dropdown"style="display:flex; text-align:center;">
+									<a class="dropbtn"><b>Write</b>
+										<i class="fa fa-caret-down"></i>
+									</a>
+									<div class="dropdown-content">
+										<a class="a1" href="#">Create a new story</a>
+										<a class="a1" href="#">My Stories</a>
+										<a class="a1" href="#">Helpful writer resources</a>
+										<a class="a1" href="#">Wattpad programs & opportunities</a>
+										<a class="a1" href="#">Writing contests</a>
+									</div>
+								</div>
+							</li>
+							<li class="premium"><a href="premium.html">Try Premium!</a></li>
+							<li class="btn-login"><a href="#"><b>Log In</b></a></li>
+							<li><a href="#"><b>Sign In</b></a>
+							</li>
+						</ul>
+					</div> 
+				</div>  <!-- close contar fluid -->
+			</nav> <!-- close navbar -->
+		</div>  <!-- close banner contaner -->
+	</header>    <!-- close banner -->
+	<!-- End Header -->
+	<div class="fullbg"></div>
+	<div class="loginform bg" style="z-index:999999">
+		<span class="close">&times;</span>
+		<H2>Login to wattpad</H2>
+		<form action="#">
+			<div>
+				<label>Username</label>
+				<input type="text" name="username">
+			</div>
+			<div>
+				<label>Email</label>
+				<input type="email" name="email">
+			</div>
+			<button class="">Login Here</button>
+		</form>
+	</div>
+
+	<script>
+		function showModel() {
+			document.querySelector('.loginform').classList.add('showloginform');
+		}
+		function closeModel() {
+			document.querySelector('.fullbg').classList.remove('showfullbg');
+			document.querySelector('.loginform').classList.remove('showloginform');
+		}
+		var btnlogin = document.querySelector(".btn-login"); //login button get 
+		btnlogin.addEventListener("click", showModel)//login button click
+
+		var c = document.querySelector(".close");//login button get 
+		c.addEventListener("click", closeModel)//login button click
+
+	</script>
+
+
+	<!-- Start Featured Slider -->
+	<section id="mu-hero">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6 col-sm-6 col-sm-push-6">
+					<div class="mu-hero-right">
+						<img src=https://books.google.co.in/books/publisher/content?id=-c-nDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70Xkze8gf00XTqNUeFvCUJYxU2jrI3bsD7-SKLKgBS0Y0sGA2fBG0_qIOUz7epbf9_3y8lHL6xDrfmwKTZnY2bQVZGnGDCg6RSw2JRglhzIIdcalISWPgZbvIPW0r3VoXtlgV0D
+							alt="Ebook img" width="50%">
+					</div>
+				</div>
+
+				<div class="col-md-6 col-sm-6 col-sm-pull-6">
+					<div class="mu-hero-left">
+						<h1>Hi, We are Wattpad.</h1><br>
+						<h3>The world's largest storytelling community</h3><br>
+						<p>Home to 97 million people<sup>2</sup> who spend over 26 billion minutes a month engaged in
+							original
+							stories, Wattpad has
+							democratized storytelling for a new generation of diverse Gen Z writers and their fans.</p>
+						<a href="#" class="mu-primary-btn">Start Reading</a>
+						<a href="#" class="mu-primary-btn">Start Writing</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Start main content -->
+
+	<main role="main">
+
+		<!-- Start Counter -->
+		<section id="mu-counter">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-counter-area">
+
+							<div class="mu-counter-block">
+								<div class="row">
+
+									<!-- Start Single Counter -->
+									<div class="col-md-3 col-sm-6">
+										<div class="mu-single-counter">
+											<i class="fa fa-files-o" aria-hidden="true"></i>
+											<div class="counter-value" data-count="650">0</div>
+											<h5 class="mu-counter-name">Total Pages</h5>
+										</div>
+									</div>
+									<!-- / Single Counter -->
+
+									<!-- Start Single Counter -->
+									<div class="col-md-3 col-sm-6">
+										<div class="mu-single-counter">
+											<i class="fa fa-file-text-o" aria-hidden="true"></i>
+											<div class="counter-value" data-count="422">0</div>
+											<h5 class="mu-counter-name">Chapters</h5>
+										</div>
+									</div>
+									<!-- / Single Counter -->
+
+									<!-- Start Single Counter -->
+									<div class="col-md-3 col-sm-6">
+										<div class="mu-single-counter">
+											<i class="fa fa-users" aria-hidden="true"></i>
+											<div class="counter-value" data-count="1055">0</div>
+											<h5 class="mu-counter-name">Active Readers</h5>
+										</div>
+									</div>
+									<!-- / Single Counter -->
+
+									<!-- Start Single Counter -->
+									<div class="col-md-3 col-sm-6">
+										<div class="mu-single-counter">
+											<i class="fa fa-trophy" aria-hidden="true"></i>
+											<div class="counter-value" data-count="03">0</div>
+											<h5 class="mu-counter-name">Got Awards</h5>
+										</div>
+									</div>
+									<!-- / Single Counter -->
+
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Counter -->
+
+		<!-- Start Book Overview -->
+		<section id="mu-book-overview">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-book-overview-area">
+
+							<div class="mu-heading-area">
+								<h2 class="mu-heading-title">See Your Story....</h2>
+								<span class="mu-header-dot"></span>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+									Ipsum has been the industry's standard dummy text ever</p>
+							</div>
+
+							<!-- Start Book Overview Content -->
+							<div class="mu-book-overview-content">
+								<div class="row">
+
+									<!-- Book Overview Single Content -->
+									<div class="col-md-3 col-sm-6">
+										<div class="mu-book-overview-single">
+											<span class="mu-book-overview-icon-box">
+												<i class="fa fa-area-chart" aria-hidden="true"></i>
+											</span>
+											<h4>Get produced to movie or film</h4>
+											<p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis
+												inkeras.</p>
+										</div>
+									</div>
+									<!-- / Book Overview Single Content -->
+
+									<!-- About Us Single Content -->
+									<div class="col-md-3 col-sm-6">
+										<div class="mu-book-overview-single">
+											<span class="mu-book-overview-icon-box">
+												<i class="fa fa-cubes" aria-hidden="true"></i>
+											</span>
+											<h4>Get adapted to a TV series</h4>
+											<p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis
+												inkeras.</p>
+										</div>
+									</div>
+									<!-- / Book Overview Single Content -->
+
+									<!-- About Us Single Content -->
+									<div class="col-md-4 col-sm-12">
+										<div class="mu-book-overview-single">
+											<span class="mu-book-overview-icon-box">
+												<i class="fa fa-modx" aria-hidden="true"></i>
+											</span>
+											<h4>Get published</h4>
+											<p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis
+												inkeras.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End Book Overview Content -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Book Overview -->
+
+
+
+		<!-- Start Video Review -->
+		<section id="mu-video-review">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-video-review-area">
+
+							<div class="mu-heading-area">
+								<h2 class="mu-heading-title">Wattpad Stories Video See</h2>
+								<span class="mu-header-dot"></span>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+									Ipsum has been the industry's standard dummy text ever</p>
+							</div>
+
+							<!-- Start Video Review Content -->
+							<div class="mu-video-review-content">
+								<iframe class="mu-video-iframe" width="100%" height="480"
+									src="https://www.youtube.com/embed/T4ySAlBt2Ug" frameborder="0"
+									allowfullscreen></iframe>
+							</div>
+							<!-- End Video Review Content -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Video Review -->
+		<!-- Start wattpad work-->
+		<section id="mu-pricing">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+
+						<div class="mu-heading-area">
+							<h2 class="mu-heading-title">How Wattpad Works</h2>
+							<span class="mu-header-dot"></span>
+							<p>Get your story discovered through the power of community and technology on Wattpad.
+							</p>
+						</div>
+
+						<!-- Start work Content -->
+						<div class="mu-pricing-content">
+							<div class="row">
+
+								<!-- create Single Content -->
+								<div class="col-sm-6 col-md-4">
+									<div class="mu-pricing-single">
+
+										<div class="mu-pricing-single-head">
+											<h4><b>Create</b></h4>
+											<P>Share your unique voice and original story on Wattpad. Find the
+												writing resources you need to craft a story only you can
+												tell.</P>
+										</div>
+									</div>
+									<div class="mu-pricing-single mu-popular-price-tag">
+
+
+										<div class="mu-pricing-single-head">
+											<h4><b>Writing Resources</b></h4>
+											<p class="mu-price-tag">
+												<b>25</b>+
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- / Pricing Single Content -->
+
+								<!-- Pricing Single Content -->
+								<div class="col-sm-6 col-md-4">
+									<div class="mu-pricing-single">
+
+										<div class="mu-pricing-single-head">
+											<h4><b>Build </b></h4>
+											<P>Establish a global fan base as your story gains readership and
+												momentum. Connect with other like-minded writers through
+												storytelling.</P>
+										</div>
+
+									</div>
+									<div class="mu-pricing-single mu-popular-price-tag">
+
+
+										<div class="mu-pricing-single-head">
+											<h4><b> Million people <sup>2</sup> </b></h4>
+											<p class="mu-price-tag">
+												<b>97</b>+
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- / Pricing Single Content -->
+
+								<!-- Pricing Single Content -->
+								<div class="col-sm-6 col-md-4">
+									<div class="mu-pricing-single">
+
+										<div class="mu-pricing-single-head">
+											<h4><b>Amplify</b></h4>
+											<P>Gain Wattpad Star status and get your story published or adapted into
+												film or television with Wattpad WEBTOON Studios!</P>
+										</div>
+
+									</div>
+									<div class="mu-pricing-single mu-popular-price-tag">
+
+
+										<div class="mu-pricing-single-head">
+											<h4><b> Story Deals</b></h4>
+											<p class="mu-price-tag">
+												<b>1000</b>+
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- / Pricing Single Content -->
+
+
+							</div>
+						</div>
+						<!-- End Pricing Content -->
+
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+		<!-- End Pricing -->
+
+		<!-- Start Testimonials -->
+		<section id="mu-testimonials">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-testimonials-area">
+							<div class="mu-heading-area">
+								<h2 class="mu-heading-title">Our Writers</h2>
+								<span class="mu-header-dot"></span>
+							</div>
+
+							<div class="mu-testimonials-block">
+								<ul class="mu-testimonial-slide">
+
+									<li>
+										<p>"Working with wattpad studio with like a dream, not only do they care about
+											your success, But also staying true to your vision."</p>
+										<img class="mu-rt-img" src="assets/images/reader-1.jpg" alt="img">
+										<h5 class="mu-rt-name"> Kara barbieri(@Pandean)</h5>
+										<p>Kara barbieri is one of the 22 years old author with a love for the weird and
+											mystic. Her debut Novel <b>White Stag.</b>Will be published wednesday
+											books/macmillan in january 2019.</p>
+										<span class="mu-rt-title">CEO, Apple Inc.</span>
+										<a href="#" class="mu-primary-btn">Start Reading</a>
+
+									</li>
+
+									<li>
+										<p>"When I joined Wattpad I gained a second family who were as passionate about
+											reading and writing as I am"</p>
+										<img class="mu-rt-img" src="assets/images/reader-1.jpg" alt="img">
+										<h5 class="mu-rt-name"> Ali Novak (@Fallzswimmer)</h5>
+										<p>Ali novak is a wisconsiv native and a graduate of the university wisconsiv
+											madison creative writing program. She started writing her debut noval <b>My
+												Life with the Walter Boys</b>, When see the only fifteen. Since then,
+											her works has recieved more then 150 million hits online and <b>My
+												Life with the Walter Boys</b> has been option for televion by komixx
+											entertainment and sony picture televion</p>
+										<span class="mu-rt-title">CEO, Apple Inc.</span>
+										<a href="#" class="mu-primary-btn">Start Reading</a>
+
+									</li>
+									<li>
+										<p>"Being a Wattpad star foundation for a everything I do as a writer form the
+											behind the sences wrangling to the big game-changing projects "
+										</p>
+										<img class="mu-rt-img" src="assets/images/reader-1.jpg" alt="img">
+										<h5 class="mu-rt-name"> Ben Sobieck(@Ben Sobieck)</h5>
+										<p>Benjamin Sobieck is a Wattpad star and editor of "The writer guide to
+											Wattpad" published in august 2018 by writer digest books and Featuring
+											contribution by 2023 Wattpad stars, ambassadors and staff.His stories has
+											wattpad such as <b>When The Black-Eyed children knock.</b>have drawn more
+											then 1.5 million reads.
+										</p>
+										<span class="mu-rt-title">CEO, Apple Inc.</span>
+										<a href="#" class="mu-primary-btn">Start Reading</a>
+
+									</li>
+									<li>
+										<p>"Having been active on Wattpad for several years. I knew it would be the
+											perfect platform for a thriller with lots of cliffhanger for readers to
+											discuss teen horror is my passion so i can not to be able to share a light
+											way feather with other horror aficionados on hulu"</p>
+										<img class="mu-rt-img" src="assets/images/reader-1.jpg" alt="img">
+										<h5 class="mu-rt-name"> Zoe Aarisen (@Zaarsenist)</h5>
+										<p>Zoe Arisen is a graphic designer and copy writer, Her first paranormal YA
+											novel light as a feather stiff as a board is being published by Simon &
+											Schuster turned in to a televion series on hulu.
+										</p>
+										<span class="mu-rt-title">CEO, Apple Inc.</span>
+										<a href="#" class="mu-primary-btn">Start Reading</a>
+
+									</li>
+									<li>
+										<p>"The Wattpad Stars Program gave me apportunity i never thought possible. A
+											connected me to a world that I had only imagined. I don't know how else to
+											say it, It change my life."</p>
+										<img class="mu-rt-img" src="assets/images/reader-1.jpg" alt="img">
+										<h5 class="mu-rt-name"> Isabelle Ronin(@Isabelle Ronin)</h5>
+										<p><b>Chasing red </b>was one of 2016 most of read stories on Wattpad, and that
+											was in
+											just the begnning for that winnipag-manitoba-based writer. In a single year,
+											explosive hit has rocked up over 127 million reads on Wattpad. Newly edited
+											and expanded the book was split into two hit bookstore shelves in 2017.</p>
+										<span class="mu-rt-title">CEO, Apple Inc.</span>
+										<a href="#" class="mu-primary-btn">Start Reading</a>
+
+									</li>
+								</ul>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Testimonials -->
+		<!-- jhjkhgdjgd -->
+		<section id="mu-pricing">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-pricing-area">
+
+							<div class="mu-heading-area">
+								<h2 class="mu-heading-title">Get Discovered</h2>
+								<span class="mu-header-dot"></span>
+								<p>Get your story discovered through the power of community and technology on Wattpad.
+								</p>
+							</div>
+
+							<!-- Start work Content -->
+							<div class="mu-pricing-content">
+								<div class="row">
+
+									<!-- create Single Content -->
+									<div class="col-sm-6 col-md-4">
+										<div class="mu-pricing-single">
+
+											<div class="mu-pricing-single-head">
+												<img class="mu-rt-img"
+													src="https://media.istockphoto.com/id/1201714716/photo/what-is-your-story-text-on-note-pad.jpg?s=1024x1024&w=is&k=20&c=47scZwMq9drCcnNK14D5cZWdF1Mw5-HHtiB4rm6YG2I="
+													alt="img">
+												<h3><b><a href="#">Writing contests</a></b></h3>
+												<P><a href="#">Enter writing contests to get published,win Awards and
+														partner with global brands.</a></P>
+
+											</div>
+										</div>
+									</div>
+									<!-- / Pricing Single Content -->
+
+									<!-- Pricing Single Content -->
+									<div class="col-sm-6 col-md-4">
+										<div class="mu-pricing-single">
+
+											<div class="mu-pricing-single-head">
+												<img class="mu-rt-img"
+													src="data:image/png;base64,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"
+													alt="img">
+												<h3><b><a href="#">The Wattys</a></b></h3>
+												<P><a href="#">Wattpad's annual Awards program committed to
+														celebrating the best stroy around the world.</a></P>
+
+											</div>
+
+										</div>
+
+									</div>
+									<!-- / Pricing Single Content -->
+
+									<!-- Pricing Single Content -->
+									<div class="col-sm-6 col-md-4">
+										<div class="mu-pricing-single">
+
+											<div class="mu-pricing-single-head">
+												<img class="mu-rt-img" src="assets/images/reader-1.jpg" alt="img">
+												<h3><b><a href="#">Wattpad pickes</a></b></h3>
+												<P><a href="#">Get Featured on our hand-picked reading list</a></P>
+											</div>
+
+										</div>
+
+									</div>
+									<!-- / Pricing Single Content -->
+								</div>
+							</div>
+							<!-- End Pricing Content -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Pricing -->
+
+		<!-- dnkjdnkjdfn -->
+
+		<!-- Start banner -->
+		<section id="mu-hero">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-hero-left">
+							<h2>Wattpad Brand Partnership.</h2><br>
+							<h1><b>The world's most positive platform for brands to engage Gen Z.</b></h1><br>
+							<p>If you’re a business, click below to learn more.</p>
+							<a href="#" class="mu-primary-btn">Learn more..</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- banner end -->
+
+		<!-- start take wattpad people -->
+		<section id="mu-hero">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 col-sm-6 col-sm-push-6">
+						<div class="mu-hero-right">
+							<img src=https://books.google.co.in/books/publisher/content?id=LApaDwAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U11xJrUOB8FBdpBsj_0twm0VsCrqw&w=1280
+								alt="Ebook img" width="50%">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-6 col-sm-pull-6">
+						<div class="mu-hero-left">
+							<h1><b>Take Wattpad With You</b></h1><br>
+							<p>Read and write anywhere, even offline.</p>
+							<a href="#" class="mu-primary-btn">Start Reading</a>
+							<a href="#" class="mu-primary-btn">Start Writing</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- end take wattpad people -->
+	</main>
+
+	<!-- End main content -->
+
+
+	<!-- Start footer -->
+	<footer id="mu-footer" role="contentinfo">
+		<div class="container">
+			<div class="#">
+				<ul class="nav navbar-nav mu-menu navbar-right">
+					<li class="list"><a href="#">Wattpad Originals</a></li>
+					<li class="list"><a href="#">Try Premium</a></li>
+					<li class="list"><a href="#">Get the App</a></li>
+					<li class="list"><a href="#">Writers</a></li>
+					<li class="list"><a href="#">Brand Partnerships</a></li>
+					<li class="list"><a href="#">Jobs</a></li>
+					<li class="list"><a href="#">Press</a></li>
+				</ul>
+				<ul class="nav navbar-nav mu-menu navbar-right">
+					<li class="list"><a href="#">Terms</a></li>
+					<li class="list"><a href="#">Privacy</a></li>
+					<li class="list"><a href="#">Payment Policy</a></li>
+					<li class="list"><a href="#">Accessibility</a></li>
+					<li class="list"><a href="#">Do Not Sell My Personal Information</a></li>
+					<li class="list"><a href="#">Help</a></li>
+				</ul>
+				<!-- <p>@2024 Wattpad</p> -->
+			</div>
+			<p>@2024 Wattpad</p>
+		</div>
+
+	</footer>
+	<!-- End footer -->
+
+
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<!-- Bootstrap -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- Slick slider -->
+	<script type="text/javascript" src="assets/js/slick.min.js"></script>
+	<!-- Counter js -->
+	<script type="text/javascript" src="assets/js/counter.js"></script>
+	<!-- Ajax contact form  -->
+	<script type="text/javascript" src="assets/js/app.js"></script>
+
+
+
+	<!-- Custom js -->
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<!-- bootstrap js -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script> -->
+	<!-- aos scipt -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+
+</html>
